@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="images/logo.png" alt="" style="height: 50px; width: 100px;"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li> 
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.5851966824!2d-0.2664051595240117!3d51.52852620095036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1727670977479!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section> 
+
+    <section class="contact-us">
+        <div class="row-contact">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house" style="color: orangered; font-size: 28px; margin-right: 30px;"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Banglore,Karnataka,India</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone" style="color: orangered; font-size: 28px; margin-right: 30px;"></i>
+                    <span>
+                        <h5>+1 0123456789</h5>
+                        <p>Monday to Saturday , 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope" style="color: orangered; font-size: 28px; margin-right: 30px;"></i>
+                    <span>
+                        <h5>info@easytutorial.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your Email" required>
+                    <input type="text" placeholder="Enter your subject" required>
+                    <textarea name="" id="" rows="5" placeholder="Message"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nemo libero, inventore ratione doloremque asperiores commodi incidunt nesciunt? Maxime ut nam architecto <br> possimus magni sunt debitis atque minus explicabo voluptas, voluptates illum excepturi sed inventore sint! Et repellat nisi quidem totam perferendis necessitatibus ipsa dignissimos, quasi voluptatibus illo earum voluptatem.</p>
+        <div class="icons">
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p></p>
+    </section> 
+
+    <!-- -------------java script -------------- -->
+    <script>
+        var navLinks=document.getElementById('navLinks')
+
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+        function hideMenu(){
+            navLinks.style.right = '-200px';
+        }
+    </script>
+</body>
+</html>
